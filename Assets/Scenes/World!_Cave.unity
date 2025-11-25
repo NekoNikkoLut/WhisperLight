@@ -253,19 +253,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 538443708a77f1b4fa6f534602c107bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  maxJumpHeight: 3.5
-  moveSpeed: 9
-  jumpForce: 17
-  fallMultiplier: 10
-  lowJumpMultiplier: 16
+  maxJumpHeight: 5
+  moveSpeed: 11
+  jumpForce: 20
+  fallMultiplier: 8
+  lowJumpMultiplier: 12
   groundCheck: {fileID: 1903496601}
   groundRadius: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   orbController: {fileID: 1623986979}
-  acceleration: 20
-  deceleration: 18
+  acceleration: 35
+  deceleration: 15
   velPower: 0.9
 --- !u!61 &912732319
 BoxCollider2D:
@@ -349,7 +349,7 @@ MonoBehaviour:
     ScreenPosition: {x: 0, y: 0.2}
     DeadZone:
       Enabled: 1
-      Size: {x: 0.2, y: 0.21}
+      Size: {x: 0.09, y: 0.01}
     HardLimits:
       Enabled: 1
       Size: {x: 0.8, y: 0.8}
