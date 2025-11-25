@@ -253,11 +253,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 538443708a77f1b4fa6f534602c107bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  maxJumpHeight: 5
-  moveSpeed: 11
-  jumpForce: 20
-  fallMultiplier: 8
-  lowJumpMultiplier: 12
+  maxJumpHeight: 6
+  moveSpeed: 12
+  jumpForce: 21
+  fallMultiplier: 9
+  lowJumpMultiplier: 13
   groundCheck: {fileID: 1903496601}
   groundRadius: 0.5
   groundLayer:
@@ -266,7 +266,7 @@ MonoBehaviour:
   orbController: {fileID: 1623986979}
   acceleration: 35
   deceleration: 15
-  velPower: 0.9
+  velPower: 10
 --- !u!61 &912732319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -736,8 +736,8 @@ MonoBehaviour:
   rb: {fileID: 1623986980}
   spriteRenderer: {fileID: 1623986978}
   playerTransform: {fileID: 912732317}
-  dashForce: 20
-  dashDuration: 0.3
+  dashForce: 45
+  dashDuration: 0.15
 --- !u!50 &1623986980
 Rigidbody2D:
   serializedVersion: 5
@@ -1285,7 +1285,7 @@ Transform:
   m_GameObject: {fileID: 1903496600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16666667, y: -3.5666668, z: 0}
+  m_LocalPosition: {x: -0.36, y: -5.33, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Jump High Limit Settings")]
-
     private float jumpStartY;
     public float maxJumpHeight = 3.5f;
 
@@ -87,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         if (!orbActive)
         {
             if (rb.linearVelocity.y < 0)
-                rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+                rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime;
             else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.Space))
                 rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
