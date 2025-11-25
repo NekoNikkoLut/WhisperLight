@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-
-
-
     [Header("Jump High Limit Settings")]
 
     private float jumpStartY;
